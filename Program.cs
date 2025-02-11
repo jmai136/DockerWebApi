@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.HttpsPolicy;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

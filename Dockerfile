@@ -17,4 +17,7 @@ COPY --from=build /publish ./
 
 # Expose port 80 and set the entry point
 EXPOSE 80
+
+ENV ASPNETCORE_URLS=http://+:80
+
 ENTRYPOINT ["dotnet", "DockerWebApi.dll"]
